@@ -1849,6 +1849,11 @@ p::first-letter {
     height: 1.75rem;
   }
 
+  .sm\:size-6 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .sm\:p-0 {
     padding: 0px;
   }
