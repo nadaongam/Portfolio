@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .button-gradient{
+    @apply 
+hs-tab-active:bg-gradient-to-r from-blue-500 to-pink-500 
+hs-tab-active:text-white
+hs-tab-active:hover:gradient-text
+hs-tab-active:hover:text-transparent
+hs-tab-active:dark:text-white
+py-2
+px-3
+sm:py-3
+sm:px-10
+inline-flex
+items-center
+sm:gap-x-10
+text-lg
+font-semibold
+text-center
+text-white
+hover:gradient-text
+hover:text-transparent
+focus:outline-none 
+rounded-lg
+disabled:opacity-50
+disabled:pointer-events-none
+dark:text-neutral-400
+dark:hover:text-neutral-300
+dark:hover:gradient-text
+dark:hover:text-transparent
+  }
+  .bg-gradient{
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+  }
+  .gradient-text{
+    @apply bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text;
+  }
+  .bg-color{
+    @apply bg-zinc-900
+  }
+  .font-text{
+    @apply font-Jetbrain
+}
+  .flex-skill{
+    @apply relative flex flex-1 shrink w-[300px] h-[110px] p-1
+  }
+  .flex-skill-bg-gradient{
+    @apply flex-1 blur-sm absolute w-[300px] h-[110px] inset-0 rounded-lg bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500
+  }
+  .inner-flex-skill{
+    @apply relative w-[100%] bg-zinc-200 rounded-lg justify-center items-center justify-items-center
+  }
+  .item-flex-skill{
+    @apply w-[300px] h-[110px] items-center justify-items-start py-10 px-5 flex
+  }
+  .font-flex-skill{
+    @apply font-extrabold text-pink-600 text-3xl text-center flex-1
+  }
+  .accordion{
+    @apply
+    hs-accordion-active:border-gray-200
+    bg-zinc-200 border 
+    border-transparent 
+    rounded-xl 
+    dark:hs-accordion-active:border-neutral-700 
+    dark:bg-neutral-800 
+    dark:border-transparent
+  }
+  .accordion-button{
+    @apply 
+    hs-accordion-active:text-pink-600
+    /* hs-accordion-active:text-transparent */
+    flex-auto
+    inline-flex 
+    justify-between 
+    items-center 
+    gap-x-3 
+    w-full 
+    font-semibold 
+    text-start 
+    text-gray-500 
+    py-4 
+    px-5 
+    hover:text-pink-500
+    disabled:opacity-50 
+    disabled:pointer-events-none 
+    dark:hs-accordion-active:text-blue-500 
+    dark:text-neutral-200 
+    dark:hover:text-neutral-400 
+    dark:focus:outline-none 
+    dark:focus:text-neutral-400
+  }
+  .scrolls-nav-gradient{
+    @apply
+    flex-initial 
+    text-lg
+    font-semibold
+    leading-6 
+    text-gray-700  
+    focus:outline-none
+    focus:gradient-text
+    focus:text-transparent
+    hs-scrollspy-active:gradient-text
+    hs-scrollspy-active:text-transparent
+    dark:text-neutral-400 
+    dark:hover:text-neutral-500 
+    dark:focus:text-blue-500 
+    dark:hs-scrollspy-active:text-blue-500
+    sm:gap-x-10
+    hover:gradient-text
+    hover:text-transparent
+    text-center  
+  }
+};
+@layer utilities{
+  p{
+    @apply first-letter:uppercase
+  }
+};
